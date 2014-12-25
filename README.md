@@ -75,3 +75,7 @@ Package could be automatically configured by a [Puppet module](https://github.co
    * Jeremy Lingmann
    * Chris Buben
 
+## Fork
+
+This fork use only the number of core for setting the number of threads to use in make, 
+it's useful to make the package for (and on) systems with only 2Go RAM.
