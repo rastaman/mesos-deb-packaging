@@ -91,8 +91,8 @@ function build {(
   mkdir -p build
   cd build
   ../configure
-  # optimal number of build jobs is 2x num_cores
-  make -j $(($(num_cores)*2))
+  # optimal number of build jobs is 2x num_cores - not on ARM C1 where i didn't have enough RAM (2Go/4c ARMv7)
+  make -j $(($(num_cores)))
 )}
 
 function os_release {
